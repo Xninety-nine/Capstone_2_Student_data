@@ -25,7 +25,9 @@ This data set tracks Portugese student's academic performance through out one sc
 3) In [Exploratory_Data_Analysis](Exploratory_Data_Analysis.ipynb) I conduct an in-depth analysis of the data, exploring and visualizing distributions for key features like age, absences, and annual grades. Additionally, I examine the distribution of grades and interactions between variables, such as family support and study time, as well as the relationship between average grade and time spent studying.
 
 
-4) In Preprocessing
+4) In [Preprocessing](Preprocessing.ipynb) notebook data transformations are applied to prepare it for machine learning algorithms. Categorical and object-type variables are converted to numeric values using one-hot encoding, and ordinal features are mapped to preserve their inherent order. Additionally, features are scaled and normalized using StandardScaler. Finally, the data is split into training and testing sets, setting the stage for model training and evaluation.
 
 
-5) In Machine Learning
+
+
+6) In Machine Learning and Prediction 
