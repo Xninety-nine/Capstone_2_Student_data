@@ -1,5 +1,5 @@
-# Capstone_2_Student_data
-Capstone 2 Project (Student Performance)
+## Capstone_2_Student_data
+# Predicting Student Academic Performance
 
 ![alt text](image.png)
 
