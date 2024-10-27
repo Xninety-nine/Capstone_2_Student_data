@@ -30,4 +30,10 @@ This data set tracks Portugese student's academic performance through out one sc
 
 
 
-6) In [Machine Learning](Machine_Learning.ipynb) notebook, I develop regression models to predict students' grades and classification models to predict the likelihood of class failures for the academic year. After evaluating baseline models, I perform hyperparameter tuning to improve performance. Finally, I visualize feature importance and classification metrics, including a confusion matrix, to interpret model results effectively. 
+5) In [Machine Learning](Machine_Learning.ipynb) notebook, I develop regression models to predict students' grades and classification models to predict the likelihood of class failures for the academic year. After evaluating baseline models, I perform hyperparameter tuning to improve performance. Finally, I visualize feature importance and classification metrics, including a confusion matrix, to interpret model results effectively.
+
+6) Conclusion: The best model for predicting average grades for the year is RandomForestRegressor with hyperparameter tuning. The models R squared score of .856 place it at a good level with 1.0 being perfect. The best model for classifiying which students would be likely to fail a class was Random Forest Classifier with hyperparameter tuning. This model's test accuracy was .82. It was able to correctly predict the students who would not fail a class 88% of the time and correctly predict the students who would fail a class 60% of the time. 
+
+7) Next steps: Resampling Techniques to handel imbalanced dataset 
+
+Use oversampling (e.g., SMOTE) to increase the number of samples in the minority classes or undersampling to reduce the size of the majority class.
