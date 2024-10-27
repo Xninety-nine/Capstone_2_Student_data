@@ -1,0 +1,39 @@
+Predicting average end of Year grades:
+
+Random Forest Regressor best model metrics and parameters:
+
+Best Parameters = n_estimators=275, max_depth=17, max_features= 0.8492234104941779, min_samples_leaf= 4, min_samples_split= 2, random_state=22
+
+Metrics: Random Forest Regressor Mean Squared Error 0.14880453203336585
+Random Forest Regressor  R2 Score 0.8567631975007556
+
+R² Scores:
+Training R²: 0.9384
+Testing R²: 0.8568
+Difference: 0.0816
+
+RMSE Scores:
+Training RMSE: 0.2463
+Testing RMSE: 0.3858
+Difference: 0.1394
+
+
+Predicting Student Failure rate in class:
+
+Random Forest Classifier best model metrics and parameters:
+
+best_rf_model = RandomForestClassifier(n_estimators=57, max_depth=5, max_features='sqrt', min_samples_leaf=4, min_samples_split=9,class_weight="balanced",random_state=22)
+
+
+Metrics:
+
+Test Accuracy: 0.826530612244898
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.90      0.88      0.89        78
+           1       0.57      0.60      0.59        20
+
+    accuracy                           0.83        98
+   macro avg       0.73      0.74      0.74        98
+weighted avg       0.83      0.83      0.83        98
