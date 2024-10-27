@@ -32,8 +32,15 @@ This data set tracks Portugese student's academic performance through out one sc
 
 5) In [Machine Learning](Machine_Learning.ipynb) notebook, I develop regression models to predict students' grades and classification models to predict the likelihood of class failures for the academic year. After evaluating baseline models, I perform hyperparameter tuning to improve performance. Finally, I visualize feature importance and classification metrics, including a confusion matrix, to interpret model results effectively.
 
-6) Conclusion: The best model for predicting average grades for the year is RandomForestRegressor with hyperparameter tuning. The models R squared score of .856 place it at a good level with 1.0 being perfect. The best model for classifiying which students would be likely to fail a class was Random Forest Classifier with hyperparameter tuning. This model's test accuracy was .82. It was able to correctly predict the students who would not fail a class 88% of the time and correctly predict the students who would fail a class 60% of the time. 
+6) Conclusion:
+   Grade Prediction: The RandomForestRegressor with hyperparameter tuning proved to be the best model for predicting students' average grades for the year. With an R-squared score of 0.856, it shows strong predictive capability (where 1.0 is a perfect fit). The model's performance improved significantly after including semester 1 grades in the training data. This model could assist administration and teachers after the first quarter by providing insights into students' likely average grades by year-end.
 
-7) Next steps: Resampling Techniques to handel imbalanced dataset 
+  Class Failure Prediction: For identifying students at risk of failing a class, the RandomForestClassifier with hyperparameter tuning was the most effective model, achieving a test accuracy of 0.82. It correctly identified students who would pass 88% of the time and accurately predicted those who would fail 60% of the time.
+   
 
-Use oversampling (e.g., SMOTE) to increase the number of samples in the minority classes or undersampling to reduce the size of the majority class.
+7) Next steps: 
+
+- Addressing Class Imbalance: Implement resampling techniques to handle the imbalanced dataset. This could include oversampling methods (e.g., SMOTE) to increase the number of minority class samples or undersampling to reduce the size of the majority class.
+- Further Parameter Tuning: Continue exploring hyperparameters to optimize model performance further.
+- Feature Engineering: Identify and create additional features to improve the model’s ability to classify students at risk of failing, enhancing the precision of future predictions.
+- Create an XGBoost model with hyperparameter tuning and evaluate metrics. 
