@@ -14,7 +14,7 @@ This data set tracks Portugese student's academic performance through out one sc
 
 
 
-2) In Loading_cleaning the data is loaded and features are created to calculate average grades earned by students for the year. Absence feature is created to calculate absence as a percent. Quick EDA is performed to get a sense of the data set. Additionally I create categorical features to label students based on the percentlie of their average grade 'low','average' and 'high'. Categorical and object features are also transformed using one-hot encoding to prepare data for modeling.
+2) In [Loading_cleaning](Loading_Cleaning.ipynb) the data is loaded and features are created to calculate average grades earned by students for the year. Absence feature is created to calculate absence as a percent. Quick EDA is performed to get a sense of the data set. Additionally I create categorical features to label students based on the percentlie of their average grade 'low','average' and 'high'. Categorical and object features are also transformed using one-hot encoding to prepare data for modeling.
 
 
 
