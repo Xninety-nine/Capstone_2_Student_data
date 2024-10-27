@@ -33,9 +33,9 @@ This data set tracks Portugese student's academic performance through out one sc
 5) In [Machine Learning](Machine_Learning.ipynb) notebook, I develop regression models to predict students' grades and classification models to predict the likelihood of class failures for the academic year. After evaluating baseline models, I perform hyperparameter tuning to improve performance. Finally, I visualize feature importance and classification metrics, including a confusion matrix, to interpret model results effectively.
 
 6) Conclusion:
-   Grade Prediction: The RandomForestRegressor with hyperparameter tuning proved to be the best model for predicting students' average grades for the year. With an R-squared score of 0.856, it shows strong predictive capability (where 1.0 is a perfect fit). The model's performance improved significantly after including semester 1 grades in the training data. This model could assist administration and teachers after the first quarter by providing insights into students' likely average grades by year-end.
+- Grade Prediction: The RandomForestRegressor with hyperparameter tuning proved to be the best model for predicting students' average grades for the year. With an R-squared score of 0.856, it shows strong predictive capability (where 1.0 is a perfect fit). The model's performance improved significantly after including semester 1 grades in the training data. This model could assist administration and teachers after the first quarter by providing insights into students' likely average grades by year-end.
 
-  Class Failure Prediction: For identifying students at risk of failing a class, the RandomForestClassifier with hyperparameter tuning was the most effective model, achieving a test accuracy of 0.82. It correctly identified students who would pass 88% of the time and accurately predicted those who would fail 60% of the time.
+- Class Failure Prediction: For identifying students at risk of failing a class, the RandomForestClassifier with hyperparameter tuning was the most effective model, achieving a test accuracy of 0.82. It correctly identified students who would pass 88% of the time and accurately predicted those who would fail 60% of the time.
    
 
 7) Next steps: 
