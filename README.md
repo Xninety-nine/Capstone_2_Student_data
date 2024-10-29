@@ -1,11 +1,15 @@
-# Capstone_2_Student_data
-Capstone 2 Project (Student Performance)
+## Capstone_2_Student_data
+# Predicting Student Academic Performance
 
 ![alt text](image.png)
 
 
 
-The United States of America spends the second most amount of money in the world per student. However student academic performances in math and reading in the U.S. fall below that of students from other developed countries. My goal is to develop ML models that help make schools more efficient with time and money by predicting academic level of students and class failures. Administrators usually build schedules for students in the summer and being able to identify students at risk will help them determine how much intervention will be needed for the academic year. Additionally being able to predict which students might fail their class will help to set up intervention early in the year. Furthermore identifing students who are academically excelling will help inform teachers on rigor of lessons to promote academic growth. 
+The United States ranks second in the world for per-student spending, yet academic performance in math and reading often lags behind that of students in other developed countries. This project aims to develop machine learning models that help schools use time and resources more efficiently by predicting students' academic levels and likelihood of class failures.
+
+Accurate predictions can enable administrators to identify at-risk students and allocate intervention resources effectively during schedule planning. Early identification of students likely to struggle can drive timely support, while insights into academically excelling students can inform teachers on lesson rigor to foster continued growth.
+
+
 
 
 1) The data was obtained from [UC Irvine Machine Learning Repository](https://archive.ics.uci.edu/dataset/320/student+performance)
@@ -14,14 +18,29 @@ This data set tracks Portugese student's academic performance through out one sc
 
 
 
-2) In Loading_cleaning the data is loaded and features are created to calculate average grades earned by students for the year. Absence feature is created to calculate absence as a percent. Quick EDA is performed to get a sense of the data set. Additionally I create categorical features to label students based on the percentlie of their average grade 'low','average' and 'high'. Categorical and object features are also transformed using one-hot encoding to prepare data for modeling.
+2) In [Loading_cleaning](Loading_Cleaning.ipynb) notebook the dataset is loaded and preprocessed. New features are created, including the calculation of students' average grades for the year and an absence percentage feature. A quick exploratory data analysis (EDA) provides initial insights into the dataset. Additionally, categorical labels ('low', 'average', 'high') are assigned to students based on their average grade percentiles. Categorical and object-type features are then transformed using one-hot encoding to prepare the data for modeling.
 
 
 
-3) In Exploratory_Data_Analysis 
+3) In [Exploratory_Data_Analysis](Exploratory_Data_Analysis.ipynb) I conduct an in-depth analysis of the data, exploring and visualizing distributions for key features like age, absences, and annual grades. Additionally, I examine the distribution of grades and interactions between variables, such as family support and study time, as well as the relationship between average grade and time spent studying.
 
 
-4) In Preprocessing
+4) In [Preprocessing](Preprocessing.ipynb) notebook data transformations are applied to prepare it for machine learning algorithms. Categorical and object-type variables are converted to numeric values using one-hot encoding, and ordinal features are mapped to preserve their inherent order. Additionally, features are scaled and normalized using StandardScaler. Finally, the data is split into training and testing sets, setting the stage for model training and evaluation.
 
 
-5) In Machine Learning
+
+
+5) In [Machine Learning](Machine_Learning.ipynb) notebook, I develop regression models to predict students' grades and classification models to predict the likelihood of class failures for the academic year. After evaluating baseline models, I perform hyperparameter tuning to improve performance. Finally, I visualize feature importance and classification metrics, including a confusion matrix, to interpret model results effectively.
+
+6) Conclusion:
+- Grade Prediction: The RandomForestRegressor with hyperparameter tuning proved to be the best model for predicting students' average grades for the year. With an R-squared score of 0.856, it shows strong predictive capability (where 1.0 is a perfect fit). The model's performance improved significantly after including semester 1 grades in the training data. This model could assist administration and teachers after the first quarter by providing insights into students' likely average grades by year-end.
+
+- Class Failure Prediction: For identifying students at risk of failing a class, the RandomForestClassifier with hyperparameter tuning was the most effective model, achieving a test accuracy of 0.82. It correctly identified students who would pass 88% of the time and accurately predicted those who would fail 60% of the time.
+   
+
+7) Next steps: 
+
+- Addressing Class Imbalance: Implement resampling techniques to handle the imbalanced dataset. This could include oversampling methods (e.g., SMOTE) to increase the number of minority class samples or undersampling to reduce the size of the majority class.
+- Further Parameter Tuning: Continue exploring hyperparameters to optimize model performance further.
+- Feature Engineering: Identify and create additional features to improve the model’s ability to classify students at risk of failing, enhancing the precision of future predictions.
+- Create an XGBoost model with hyperparameter tuning and evaluate metrics. 
