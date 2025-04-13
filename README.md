@@ -27,7 +27,13 @@ This data set tracks Portugese student's academic performance through out one sc
 3) In [Exploratory_Data_Analysis](Exploratory_Data_Analysis.ipynb) I conduct an in-depth analysis of the data, exploring and visualizing distributions for key features like age, absences, and annual grades. Additionally, I examine the distribution of grades and interactions between variables, such as family support and study time, as well as the relationship between average grade and time spent studying.
 
 
-<img width="724" alt="image" src="https://github.com/user-attachments/assets/dcbc1268-7457-47e9-8852-735fe01d7cc5" />
+## Grades and Time Spent Studying
+
+<img width="729" alt="image" src="https://github.com/user-attachments/assets/27e2673f-820f-4888-b043-16f85be5b7a1" />
+
+
+
+
 
 
 
