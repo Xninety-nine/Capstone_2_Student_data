@@ -1,4 +1,6 @@
 ## Capstone_2_Student_data
+## [Linkedin](https://www.linkedin.com/in/francisco-torres-6a8b65187/)
+
 # Predicting Student Academic Performance
 
 ![alt text](image.png)
